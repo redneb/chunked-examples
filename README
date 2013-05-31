@@ -1,0 +1,14 @@
+This repository contains three examples of HTTP responses that use 
+chunked transfer encoding. Note that for all files, CR+LF line breaks 
+are used as required by the specification. Make sure that you preserve 
+the encoding of line breaks when handling these files.
+
+complete
+This is a correct HTTP response.
+
+incomplete-incomplete-chunk
+This is an incomplete response. The last chunk is also incomplete.
+
+incomplete-complete-chunk
+This is an incomplete response. The last chunk is complete but its 
+length is not zero.
